@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Timetable</title>
+    <!-- Use Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-6 md:p-10 rounded-3xl shadow-2xl max-w-6xl w-full">
+        <!-- Header Section -->
+        <div class="text-center mb-8 md:mb-12">
+            <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-2">My Weekly Timetable</h1>
+            <p class="text-lg md:text-xl text-gray-600">Here is your schedule for the week.</p>
+        </div>
+
+        <!-- Timetable Grid Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Monday -->
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                <h2 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-200 pb-2">Monday 🗓️</h2>
+                <ul class="space-y-4">
+                    <li class="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-sm text-gray-500 font-medium">9:00 AM - 10:40 AM</p>
+                        <p class="text-base text-gray-900 font-semibold">Deep Neural Network <span class="text-blue-600 font-normal">(204 LHC)</span></p>
+                    </li>
+                    <li class="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-sm text-gray-500 font-medium">10:40 AM - 11:30 AM</p>
+                        <p class="text-base text-gray-900 font-semibold">Cloud Computing Applications <span class="text-blue-600 font-normal">(103 LHC)</span></p>
+                    </li>
+                    <li class="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-sm text-gray-500 font-medium">11:30 AM - 12:20 PM</p>
+                        <p class="text-base text-gray-900 font-semibold">Cloud Security and Privacy <span class="text-blue-600 font-normal">(103 LHC)</span></p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tuesday -->
+            <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                <h2 class="text-2xl font-bold text-green-800 mb-4 border-b-2 border-green-200 pb-2">Tuesday 🗓️</h2>
+                <ul class="space-y-4">
+                    <li class="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-sm text-gray-500 font-medium">9:50 AM - 10:40 AM</p>
+                        <p class="text-base text-gray-900 font-semibold">Linux <span class="text-green-600 font-normal">(102 2AB)</span></p>
+                    </li>
+                    <li class="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-sm text-gray-500 font-medium">10:40 AM - 11:30 AM</p>
+                        <p class="text-base text-gray-900 font-semibold">Cloud Computing Applications <span class="text-green-600 font-normal">(103 LHC)</span></p>
+                    </li>
+                    <li class="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-sm text-gray-500 font-medium">11:30 AM - 12:20 PM</p>
+                        <p class="text-base text-gray-900 font-semibold">Cloud Security and Privacy <span class="text-green-600 font-normal">(103 LHC)</span></p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Wednesday -->
+            <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                <h2 class="text-2xl font-bold text-purple-800 mb-4 border-b-2 border-purple-200 pb-2">Wednesday 🗓️</h2>
+                <ul class="space-y-4">
+                    <li class="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-sm text-gray-500 font-medium">9:50 AM - 11:20 AM</p>
+                        <p class="text-base text-gray-900 font-semibold">Deep Neural Network <span class="text-purple-600 font-normal">(204 LHC)</span></p>
+                    </li>
+                    <li class="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-sm text-gray-500 font-medium">9:50 AM - 11:10 AM</p>
+                        <p class="text-base text-gray-900 font-semibold">Linux <span class="text-purple-600 font-normal">(102 2AB)</span></p>
+                    </li>
+                    <li class="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-sm text-gray-500 font-medium">11:30 AM - 12:50 PM</p>
+                        <p class="text-base text-gray-900 font-semibold">EXPLAINABLE AI <span class="text-purple-600 font-normal">(103 LHC)</span></p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Thursday (Off Day) -->
+            <div class="bg-gradient-to-br from-gray-200 to-gray-300 p-6 rounded-2xl shadow-md text-center flex flex-col justify-center transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Thursday</h2>
+                <p class="text-5xl font-extrabold text-gray-600">OFF DAY</p>
+                <span class="text-6xl mt-4">🧘‍♂️</span>
+            </div>
+
+            <!-- Friday -->
+            <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-2xl shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                <h2 class="text-2xl font-bold text-red-800 mb-4 border-b-2 border-red-200 pb-2">Friday 🗓️</h2>
+                <ul class="space-y-4">
+                    <li class="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-sm text-gray-500 font-medium">9:50 AM - 10:40 AM</p>
+                        <p class="text-base text-gray-900 font-semibold">EXPLAINABLE AI <span class="text-red-600 font-normal">(103 LHC)</span></p>
+                    </li>
+                    <li class="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-sm text-gray-500 font-medium">10:40 AM - 11:30 AM</p>
+                        <p class="text-base text-gray-900 font-semibold">Cloud Computing Applications <span class="text-red-600 font-normal">(103 LHC)</span></p>
+                    </li>
+                    <li class="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <p class="text-sm text-gray-500 font-medium">11:30 AM - 12:20 PM</p>
+                        <p class="text-base text-gray-900 font-semibold">Cloud Security and Privacy <span class="text-red-600 font-normal">(103 LHC)</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
